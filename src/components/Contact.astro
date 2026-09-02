@@ -1,0 +1,140 @@
+<section id="contact" class="contact section">
+	<div class="container">
+		<div class="contact-card">
+			<div class="contact-introduction">
+				<p class="section-label">Kontakt</p>
+				<h2>Ich freue mich auf Ihre Nachricht</h2>
+
+				<p>
+					Sie möchten mehr über mich oder meine Projekte erfahren? Schreiben
+					Sie mir gerne eine E-Mail. Ich freue mich darauf, Sie und Ihr
+					Unternehmen persönlich kennenzulernen.
+				</p>
+			</div>
+
+			<address class="contact-links">
+				<a href="mailto:zacaab8@gmail.com">
+					<span>E-Mail</span>
+					<strong>zacaab8@gmail.com</strong>
+				</a>
+
+				<a
+					href="https://github.com/Zacariasaibel"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span>GitHub</span>
+					<strong>Zacariasaibel</strong>
+				</a>
+
+				<a
+					href="https://www.linkedin.com/in/zacarias-aibbich-belhadj-a7184340b"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<span>LinkedIn</span>
+					<strong>Zacarias Aibbich Belhadj</strong>
+				</a>
+			</address>
+		</div>
+	</div>
+</section>
+
+<style>
+	.contact {
+		background-color: var(--color-background);
+	}
+
+	.contact-card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		padding: 3rem;
+		background-color: var(--color-dark-soft);
+		border-radius: var(--radius-large);
+		color: #ffffff;
+		gap: 4rem;
+	}
+
+	.section-label {
+		margin-bottom: 0.75rem;
+		color: #93c5fd;
+		font-size: 0.85rem;
+		font-weight: 700;
+		letter-spacing: 0.08em;
+		text-transform: uppercase;
+	}
+
+	h2 {
+		margin-bottom: 1.25rem;
+		font-size: clamp(2rem, 4vw, 3rem);
+		letter-spacing: -0.03em;
+	}
+
+	.contact-introduction > p:last-child {
+		max-width: 38rem;
+		margin-bottom: 0;
+		color: var(--color-text-light);
+		font-size: 1.05rem;
+	}
+
+	.contact-links {
+		display: grid;
+		align-content: center;
+		margin: 0;
+		font-style: normal;
+		gap: 0.75rem;
+	}
+
+	.contact-links a {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 1rem 1.25rem;
+		background-color: rgb(255 255 255 / 7%);
+		border: 1px solid rgb(255 255 255 / 12%);
+		border-radius: var(--radius-small);
+		gap: 1rem;
+		transition:
+			background-color 160ms ease,
+			border-color 160ms ease;
+	}
+
+	.contact-links a:hover {
+		background-color: rgb(255 255 255 / 11%);
+		border-color: rgb(255 255 255 / 24%);
+	}
+
+	.contact-links span {
+		color: #93c5fd;
+		font-size: 0.85rem;
+		font-weight: 700;
+	}
+
+	.contact-links strong {
+		text-align: right;
+		overflow-wrap: anywhere;
+	}
+
+	@media (max-width: 48rem) {
+		.contact-card {
+			grid-template-columns: 1fr;
+			padding: 2rem;
+			gap: 2.5rem;
+		}
+	}
+
+	@media (max-width: 32rem) {
+		.contact-card {
+			padding: 1.5rem;
+		}
+
+		.contact-links a {
+			align-items: flex-start;
+			flex-direction: column;
+		}
+
+		.contact-links strong {
+			text-align: left;
+		}
+	}
+</style>

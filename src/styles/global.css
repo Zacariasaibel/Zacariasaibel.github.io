@@ -1,0 +1,117 @@
+/* Core design tokens */
+:root {
+	--color-dark: #07111f;
+	--color-dark-soft: #0f1d31;
+	--color-background: #f5f7fa;
+	--color-surface: #ffffff;
+	--color-text: #172033;
+	--color-text-muted: #5f6b7a;
+	--color-text-light: #d7e0eb;
+	--color-accent: #2563eb;
+	--color-accent-hover: #1d4ed8;
+	--color-border: #dce2ea;
+
+	--shadow-card: 0 18px 45px rgb(15 23 42 / 8%);
+	--radius-small: 0.75rem;
+	--radius-large: 1.25rem;
+	--container-width: 70rem;
+	--header-height: 4.5rem;
+}
+
+/* Base styles */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	min-width: 20rem;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	font-family:
+		"Segoe UI",
+		Roboto,
+		Helvetica,
+		Arial,
+		sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.15;
+	hyphens: none;
+	overflow-wrap: normal;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+button,
+input,
+textarea {
+	font: inherit;
+}
+
+:focus-visible {
+	outline: 0.2rem solid var(--color-accent);
+	outline-offset: 0.2rem;
+}
+
+/* Shared layout utilities */
+.container {
+	width: min(calc(100% - 2rem), var(--container-width));
+	margin-inline: auto;
+}
+
+.section {
+	padding-block: 6rem;
+	scroll-margin-top: var(--header-height);
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+@media (max-width: 48rem) {
+	.section {
+		padding-block: 4.5rem;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
