@@ -36,37 +36,15 @@ Das Portfolio wurde mit folgenden Technologien umgesetzt:
 
 Voraussetzung sind eine installierte Node.js-Version und npm.
 
-Abhängigkeiten installieren:
+1. Abhängigkeiten installieren: `npm install`
+2. Entwicklungsserver starten: `npm run dev`
+3. Im Browser `http://localhost:4321/` öffnen
 
-```bash
-npm install
-```
+## Produktionsversion
 
-Entwicklungsserver starten:
-
-```bash
-npm run dev
-```
-
-Anschließend ist das Portfolio normalerweise unter folgender Adresse erreichbar:
-
-```text
-http://localhost:4321/
-```
-
-## Produktionsversion erstellen
-
-```bash
-npm run build
-```
-
-Die fertige Version wird im Ordner `dist` erstellt.
-
-Eine lokale Vorschau der Produktionsversion kann anschließend mit diesem Befehl gestartet werden:
-
-```bash
-npm run preview
-```
+- Produktionsversion erstellen: `npm run build`
+- Produktionsversion lokal prüfen: `npm run preview`
+- Die fertigen Dateien werden im Ordner `dist` erstellt.
 
 ## Kontakt
 
