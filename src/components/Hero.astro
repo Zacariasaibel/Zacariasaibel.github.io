@@ -1,10 +1,15 @@
+---
+import { Image } from "astro:assets";
+import portrait from "../assets/zacarias-aibbich-belhadj.jpg";
+---
+
 <section id="top" class="hero" aria-labelledby="hero-title">
   <div class="container hero-content">
     <div class="hero-intro">
       <p class="eyebrow">Umschulung zum Fachinformatiker für Anwendungsentwicklung</p>
       <h1 id="hero-title">Zacarias Aibbich Belhadj</h1>
     </div>
-    <img class="hero-photo" src="/images/zacarias-aibbich-belhadj.jpg" alt="Porträt von Zacarias Aibbich Belhadj" width="1463" height="2048" fetchpriority="high" decoding="async" />
+    <Image class="hero-photo" src={portrait} alt="Porträt von Zacarias Aibbich Belhadj" width={640} widths={[320, 640]} sizes="(max-width: 38rem) min(calc(65vw - 1.3rem), 13rem), (max-width: 56rem) min(calc((100vw - 5rem) / 2.35), 18rem), 18rem" format="webp" quality={80} loading="eager" fetchpriority="high" decoding="async" />
     <div class="hero-copy">
       <p class="hero-description">Mich begeistert, wenn aus einer Idee eine Anwendung wird, die man wirklich benutzen kann. Deshalb setze ich mit Angular und Django eigene Projekte um – von der Trainingsplanung bis zur Bewerbungsverwaltung.</p>
       <p class="hero-description">Für mein Pflichtpraktikum 2027 suche ich ein Entwicklungsteam, in dem ich an echten Aufgaben mitarbeiten, mein Wissen einbringen und von erfahrenen Entwicklern lernen kann.</p>
