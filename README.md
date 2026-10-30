@@ -1,53 +1,59 @@
-# Entwicklerportfolio – Zacarias Aibbich Belhadj
+# Portfolio – Zacarias Aibbich Belhadj
 
-Dieses Repository enthält mein persönliches Entwicklerportfolio. Ich absolviere seit Februar 2026 eine Umschulung zum Fachinformatiker für Anwendungsentwicklung und suche ein betriebliches Praktikum für den Zeitraum von Februar bis August 2027.
+Mein Portfolio für ein Pflichtpraktikum als Fachinformatiker für Anwendungsentwicklung. Seit Februar 2026 absolviere ich eine Umschulung beim IBB Hagen.
 
-Das Portfolio stellt meinen bisherigen Weg, meine technischen Kenntnisse und meine eigenen Projekte vor.
+## Praktikum
 
-## Inhalt
+- 25.02.2027 – 27.07.2027
+- 22.09.2027 – 29.10.2027
+- Region: Hagen, Ruhrgebiet, Düsseldorf und Köln
+- Finanzierung über den Kostenträger. Eine Vergütung durch das Unternehmen ist nicht erforderlich.
 
-Das Portfolio besteht aus folgenden Bereichen:
+## Projekte
 
-- Über mich
-- Kenntnisse
-- Projekte
-- Kontakt
+- **[BewerbungsTracker](https://github.com/Zacariasaibel/BewerbungsTracker)**: Angular, TypeScript, Django REST Framework und SQLite. Bewerbungen verwalten, nach Unternehmen suchen und nach Status filtern. Mit Übersicht und Terminen zum Nachfassen. Lokales MVP mit fiktiven Daten, ohne öffentliche Demo.
+- **[OlimpoAthlete](https://github.com/Zacariasaibel/OlimpoAthlete)**: Angular-Prototyp für regelbasierte Trainingspläne. [Live-Demo](https://zacariasaibel.github.io/OlimpoAthlete/).
+- **[Product Inventory API](https://github.com/Zacariasaibel/product-inventory-api)**: REST-API zur Produktverwaltung mit Django REST Framework und SQLite.
 
-Als Hauptprojekt wird derzeit meine Angular-Anwendung OlimpoAthlete vorgestellt. Weitere Projekte werden schrittweise ergänzt.
+Das Portfolio zeigt echte Projektaufnahmen sowie Informationen zu mir, meinen Kenntnissen und zur Kontaktaufnahme.
 
-## Technologien
+Die Startseite beginnt mit einer persönlichen Vorstellung und einem Porträt. Auf die Projekte folgen „Über mich“ und „Kenntnisse“ mit Links zu passenden Projekten. Die Praktikumsdaten und drei Kontaktkarten schließen die Seite ab. E-Mail ist der wichtigste Kontaktweg.
 
-Das Portfolio wurde mit folgenden Technologien umgesetzt:
+Die Startseite zeigt drei kompakte Projektkarten. Jede Karte führt zu einer eigenen Detailseite mit Ziel, Funktionen, Screenshots, Technologien und technischer Umsetzung:
 
-- Astro
-- HTML
-- CSS
-- JavaScript
+- `/projekte/bewerbungstracker/`
+- `/projekte/olimpoathlete/`
+- `/projekte/product-inventory-api/`
 
-## Funktionen
+Die gemeinsamen Projektdaten stehen in `src/data/projects.ts`. `src/layouts/ProjectLayout.astro` legt den Aufbau der Detailseiten fest. Astro erzeugt die Seiten über `src/pages/projekte/[slug].astro` als statische Dateien. Dadurch lassen sie sich auf GitHub Pages direkt öffnen und neu laden.
 
-- Responsives Design für Desktop, Tablet und Smartphone
-- Übersichtliche Navigation zwischen den einzelnen Bereichen
-- Vorstellung meiner Kenntnisse und Projekte
-- Direkte Links zu GitHub und LinkedIn
-- Kontaktaufnahme per E-Mail
+## Lokal öffnen
 
-## Projekt lokal ausführen
+Voraussetzung: Node.js ab 22.12.0. Die Abhängigkeiten sind bereits installiert.
 
-Voraussetzung sind eine installierte Node.js-Version und npm.
+```sh
+npm.cmd run dev
+```
 
-1. Abhängigkeiten installieren: `npm install`
-2. Entwicklungsserver starten: `npm run dev`
-3. Im Browser `http://localhost:4321/` öffnen
+Danach die im Terminal angezeigte Adresse öffnen, normalerweise `http://localhost:4321/`.
 
-## Produktionsversion
+## Build prüfen
 
-- Produktionsversion erstellen: `npm run build`
-- Produktionsversion lokal prüfen: `npm run preview`
-- Die fertigen Dateien werden im Ordner `dist` erstellt.
+```sh
+npm.cmd run build
+npm.cmd run preview
+```
+
+Die Vorschau ist normalerweise unter `http://localhost:4321/` erreichbar. Maßgeblich ist die Adresse im Terminal. Die fertigen Dateien liegen in `dist/`.
+
+## Technik und Veröffentlichung
+
+Astro, HTML und CSS, ohne zusätzliche UI-Bibliotheken. Das Layout passt sich an Smartphones und Desktopbildschirme an. Es enthält eine Sprungnavigation, sichtbare Tastaturfokusse und Bildbeschreibungen.
+
+Die bestehende GitHub-Pages-Konfiguration bleibt erhalten. Der Workflow in `.github/workflows/` veröffentlicht bei einem Push auf `main` oder bei manueller Ausführung. Commits, Push und Veröffentlichung führt der Repository-Inhaber aus.
 
 ## Kontakt
 
-- E-Mail: [zacaab8@gmail.com](mailto:zacaab8@gmail.com)
-- GitHub: [Zacariasaibel](https://github.com/Zacariasaibel)
-- LinkedIn: [Zacarias Aibbich Belhadj](https://www.linkedin.com/in/zacarias-aibbich-belhadj-a7184340b)
+- [zacaab8@gmail.com](mailto:zacaab8@gmail.com)
+- [GitHub: Zacariasaibel](https://github.com/Zacariasaibel)
+- [LinkedIn: Zacarias Aibbich Belhadj](https://www.linkedin.com/in/zacarias-aibbich-belhadj-a7184340b)

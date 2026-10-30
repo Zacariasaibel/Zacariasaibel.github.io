@@ -1,0 +1,55 @@
+---
+import { projects, type Project } from "../data/projects";
+import BaseLayout from "./BaseLayout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+const relatedProjects = projects.filter((item) => item.slug !== project.slug);
+---
+
+<BaseLayout title={`${project.name} | Zacarias Aibbich Belhadj`} description={project.summary}>
+  <Header />
+  <main id="main" class="project-detail section" tabindex="-1">
+    <div class="container detail-container">
+      <a class="text-link back-link" href="/#projects">← Zurück zu den Projekten</a>
+      <div class="detail-heading">
+        <p class="eyebrow">{project.category}</p>
+        <h1>{project.name}</h1>
+        <p>{project.summary}</p>
+        <ul class="tags" aria-label="Technologien">{project.technologies.map((technology) => <li>{technology}</li>)}</ul>
+        {project.note && <p class="project-note">{project.note}</p>}
+        <div class="project-links">
+          <a class="button" href={project.repository}>Code auf GitHub <span aria-hidden="true">↗</span></a>
+          {project.demo && <a class="text-link" href={project.demo}>Live-Demo öffnen <span aria-hidden="true">↗</span></a>}
+        </div>
+      </div>
+      <div class="detail-overview">
+        <section aria-labelledby="goal-title"><h2 id="goal-title">Ziel</h2><p>{project.goal}</p></section>
+        <section aria-labelledby="features-title"><h2 id="features-title">Funktionen</h2><ul class="feature-list">{project.features.map((feature) => <li>{feature}</li>)}</ul></section>
+      </div>
+      <section class="detail-section" aria-labelledby="screenshots-title">
+        <h2 id="screenshots-title">Einblicke in das Projekt</h2>
+        <div class="detail-gallery">
+          {project.images.map((image) => (
+            <figure>
+              <a class="screenshot-link" href={image.src} aria-label={`${image.alt} – Originalbild öffnen`}><img src={image.src} alt={image.alt} width={image.width} height={image.height} loading="lazy" decoding="async" /><span class="text-link screenshot-action">Originalbild öffnen <span aria-hidden="true">↗</span></span></a>
+              <figcaption>{image.alt}</figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+      <section class="detail-section implementation-section" aria-labelledby="implementation-title"><h2 id="implementation-title">Technische Umsetzung</h2><p>{project.implementation}</p></section>
+      <nav class="related-projects detail-section" aria-labelledby="related-title">
+        <h2 id="related-title">Weitere Projekte</h2>
+        <ul>{relatedProjects.map((item) => <li><a class="text-link" href={`/projekte/${item.slug}/`}>{item.name} <span aria-hidden="true">→</span></a></li>)}</ul>
+      </nav>
+      <a class="text-link back-link" href="/#projects">← Zurück zu den Projekten</a>
+    </div>
+  </main>
+  <Footer />
+</BaseLayout>

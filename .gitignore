@@ -26,6 +26,5 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Local instruction files
-AGENTS.md
+# Local assistant settings
 CLAUDE.md

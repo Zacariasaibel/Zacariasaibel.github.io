@@ -10,17 +10,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Zacarias Aibbich Belhadj | FIAE Portfolio";
 const pageDescription =
-	"Entwicklerportfolio von Zacarias Aibbich Belhadj mit Projekten aus den Bereichen Angular, TypeScript, Python und MySQL.";
+	"Entwicklerportfolio von Zacarias Aibbich Belhadj für ein FIAE-Pflichtpraktikum 2027. Projekte mit Angular, TypeScript und Django REST Framework.";
 ---
 
 <BaseLayout title={pageTitle} description={pageDescription}>
 	<Header />
 
-	<main>
+	<main id="main" tabindex="-1">
 		<Hero />
+		<Projects />
 		<About />
 		<Skills />
-		<Projects />
 		<Contact />
 	</main>
 
