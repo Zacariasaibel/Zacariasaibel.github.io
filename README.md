@@ -11,6 +11,8 @@ Mein Portfolio für ein Pflichtpraktikum als Fachinformatiker für Anwendungsent
 
 ## Projekte
 
+- **[ZABYTE](https://github.com/Zacariasaibel/ZABYTE)**: Fullstack-Shop mit Angular, TypeScript, Django REST Framework und SQLite. Produktsuche und Filter, persistenter Warenkorb und serverseitig validierte Bestellsimulation. [Live-Demo](https://zaibel.pythonanywhere.com/). Keine echten Zahlungen oder Lieferungen.
+
 - **[BewerbungsTracker](https://github.com/Zacariasaibel/BewerbungsTracker)**: Angular, TypeScript, Django REST Framework und SQLite. Bewerbungen verwalten, nach Unternehmen suchen und nach Status filtern. Mit Übersicht und Terminen zum Nachfassen. Lokales MVP mit fiktiven Daten, ohne öffentliche Demo.
 - **[OlimpoAthlete](https://github.com/Zacariasaibel/OlimpoAthlete)**: Angular-Prototyp für regelbasierte Trainingspläne. [Live-Demo](https://zacariasaibel.github.io/OlimpoAthlete/).
 - **[Product Inventory API](https://github.com/Zacariasaibel/product-inventory-api)**: REST-API zur Produktverwaltung mit Django REST Framework und SQLite.
@@ -19,8 +21,9 @@ Das Portfolio zeigt echte Projektaufnahmen sowie Informationen zu mir, meinen Ke
 
 Die Startseite beginnt mit einer persönlichen Vorstellung und einem Porträt. Auf die Projekte folgen „Über mich“ und „Kenntnisse“ mit Links zu passenden Projekten. Die Praktikumsdaten und drei Kontaktkarten schließen die Seite ab. E-Mail ist der wichtigste Kontaktweg.
 
-Die Startseite zeigt drei kompakte Projektkarten. Jede Karte führt zu einer eigenen Detailseite mit Ziel, Funktionen, Screenshots, Technologien und technischer Umsetzung:
+Die Startseite zeigt vier kompakte Projektkarten. Jede Karte führt zu einer eigenen Detailseite mit Ziel, Funktionen, Screenshots, Technologien und technischer Umsetzung:
 
+- `/projekte/zabyte/`
 - `/projekte/bewerbungstracker/`
 - `/projekte/olimpoathlete/`
 - `/projekte/product-inventory-api/`

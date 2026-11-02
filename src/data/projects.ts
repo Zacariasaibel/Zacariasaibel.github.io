@@ -15,6 +15,32 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    slug: "zabyte",
+    name: "ZABYTE",
+    category: "Fullstack · Onlineshop",
+    summary: "Computerzubehör suchen, einen Warenkorb verwalten und eine Bestellung mit Serverbestätigung simulieren.",
+    goal: "Den vollständigen Ablauf vom Produktkatalog bis zur bestätigten Bestellsimulation mit einer gemeinsamen API und nachvollziehbaren Prüfungen umsetzen.",
+    features: [
+      "Zehn Produkte mit Detailseiten, Bildern, Preisen und Verfügbarkeit ansehen",
+      "Nach Namen suchen, nach Kategorie und Verfügbarkeit filtern sowie nach Preis oder Name sortieren; Filter in der URL behalten",
+      "Artikel in den Warenkorb legen, Mengen ändern und die Auswahl nach dem Neuladen wiederfinden",
+      "Eine Bestellung ohne Zahlungs- oder Personendaten simulieren und die bestätigte Zusammenfassung ansehen",
+      "Produkte und Kategorien im geschützten Django Admin verwalten und simulierte Bestellungen prüfen",
+    ],
+    technologies: ["Angular", "TypeScript", "CSS", "Python", "Django REST Framework", "SQLite"],
+    implementation: "Angular und TypeScript bilden die Oberfläche. Django REST Framework stellt die API bereit, SQLite speichert Produkte und simulierte Bestellungen. Im Browser bleiben nur Produkt-IDs und Mengen gespeichert; Summen werden in ganzen Cent berechnet. Django prüft Preise, Mengen und Bestand anhand der Datenbank und speichert Bestellung und Positionen gemeinsam in einer Transaktion. Eine eindeutige Anfragekennung verhindert doppelte Bestellungen bei Wiederholungen. Die Simulation verändert keine Bestände. Build und vollständiger E2E-Test wurden lokal geprüft. Auf der öffentlichen HTTPS-Seite wurden die zehn Produkte und eine Bestellsimulation mit Referenz, korrektem Betrag und leerem Warenkorb geprüft; die lokale E2E-Suite wurde nicht gegen Produktion ausgeführt.",
+    repository: "https://github.com/Zacariasaibel/ZABYTE",
+    demo: "https://zaibel.pythonanywhere.com/",
+    note: "Portfolio-Projekt mit fiktiven Produkten und KI-generierten Produktdarstellungen. Bestellungen werden nur simuliert; es gibt keine echten Zahlungen oder Lieferungen.",
+    images: [
+      { src: "/images/projects/zabyte-inicio.jpg", alt: "ZABYTE-Katalog mit zehn Artikeln, Kategorien, Sortierung und Verfügbarkeitsfilter", width: 1348, height: 926 },
+      { src: "/images/projects/zabyte-producto.jpg", alt: "Produktdetail einer kompakten Tastatur mit Bild, Preis, Bestand und Mengenauswahl", width: 1363, height: 936 },
+      { src: "/images/projects/zabyte-warenkorb.jpg", alt: "Warenkorb mit drei Produkten, Mengensteuerung und einer Gesamtsumme von 124,70 Euro", width: 1165, height: 936 },
+      { src: "/images/projects/zabyte-checkout.jpg", alt: "Prüfung derselben drei Produkte für insgesamt 124,70 Euro vor der Bestellsimulation", width: 1363, height: 936 },
+      { src: "/images/projects/zabyte-bestaetigung.jpg", alt: "Bestätigung derselben simulierten Bestellung mit Referenz, drei Produkten und 124,70 Euro Gesamtsumme", width: 1363, height: 936 },
+    ],
+  },
+  {
     slug: "bewerbungstracker",
     name: "BewerbungsTracker",
     category: "Fullstack · Lokales MVP",
