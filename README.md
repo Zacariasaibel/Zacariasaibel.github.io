@@ -13,13 +13,11 @@ Mein Portfolio für ein Pflichtpraktikum als Fachinformatiker für Anwendungsent
 
 - **[ZABYTE](https://github.com/Zacariasaibel/ZABYTE)**: Fullstack-Shop mit Angular, TypeScript, Django REST Framework und SQLite. Produktsuche und Filter, persistenter Warenkorb und serverseitig validierte Bestellsimulation. [Live-Demo](https://zaibel.pythonanywhere.com/). Keine echten Zahlungen oder Lieferungen.
 
-- **[BewerbungsTracker](https://github.com/Zacariasaibel/BewerbungsTracker)**: Angular, TypeScript, Django REST Framework und SQLite. Bewerbungen verwalten, nach Unternehmen suchen und nach Status filtern. Mit Übersicht und Terminen zum Nachfassen. Lokales MVP mit fiktiven Daten, ohne öffentliche Demo.
+- **[BewerbungsTracker](https://github.com/Zacariasaibel/BewerbungsTracker)**: Bewerbungen verwalten, suchen und nach Status filtern. Angular, Django REST Framework und SQLite. Mit Übersicht, Terminen zum Nachfassen und getrennten Demo-Daten. Noch keine öffentliche Demo.
 - **[OlimpoAthlete](https://github.com/Zacariasaibel/OlimpoAthlete)**: Angular-Prototyp für regelbasierte Trainingspläne. [Live-Demo](https://zacariasaibel.github.io/OlimpoAthlete/).
-- **[Product Inventory API](https://github.com/Zacariasaibel/product-inventory-api)**: REST-API zur Produktverwaltung mit Django REST Framework und SQLite.
+- **[Product Inventory API](https://github.com/Zacariasaibel/product-inventory-api)**: Produktverwaltung mit Django REST Framework und SQLite. Browserformulare, geprüfte Preise und Bestände sowie getrennte Demo-Daten. Noch keine öffentliche Demo.
 
 Das Portfolio zeigt echte Projektaufnahmen sowie Informationen zu mir, meinen Kenntnissen und zur Kontaktaufnahme.
-
-Die Startseite beginnt mit einer persönlichen Vorstellung und einem Porträt. Auf die Projekte folgen „Über mich“ und „Kenntnisse“ mit Links zu passenden Projekten. Die Praktikumsdaten und drei Kontaktkarten schließen die Seite ab. E-Mail ist der wichtigste Kontaktweg.
 
 Die Startseite zeigt vier kompakte Projektkarten. Jede Karte führt zu einer eigenen Detailseite mit Ziel, Funktionen, Screenshots, Technologien und technischer Umsetzung:
 
@@ -32,7 +30,7 @@ Die gemeinsamen Projektdaten stehen in `src/data/projects.ts`. `src/layouts/Proj
 
 ## Lokal öffnen
 
-Voraussetzung: Node.js ab 22.12.0. Die Abhängigkeiten sind bereits installiert.
+Voraussetzung: Node.js ab 22.12.0. In einem neuen Checkout zuerst `npm.cmd ci` ausführen.
 
 ```sh
 npm.cmd run dev
@@ -53,7 +51,7 @@ Die Vorschau ist normalerweise unter `http://localhost:4321/` erreichbar. Maßge
 
 Astro, HTML und CSS, ohne zusätzliche UI-Bibliotheken. Das Layout passt sich an Smartphones und Desktopbildschirme an. Es enthält eine Sprungnavigation, sichtbare Tastaturfokusse und Bildbeschreibungen.
 
-Die bestehende GitHub-Pages-Konfiguration bleibt erhalten. Der Workflow in `.github/workflows/` veröffentlicht bei einem Push auf `main` oder bei manueller Ausführung. Commits, Push und Veröffentlichung führt der Repository-Inhaber aus.
+Der bestehende Workflow in `.github/workflows/` veröffentlicht bei einem Push auf `main` oder bei manueller Ausführung auf GitHub Pages. Der [Prüfbericht](docs/project-review-2026-11-02.md) unterscheidet lokale Prüfungen, öffentliche Demos und noch fehlendes Hosting.
 
 ## Kontakt
 

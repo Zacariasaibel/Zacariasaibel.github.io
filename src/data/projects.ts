@@ -53,10 +53,14 @@ export const projects: Project[] = [
       "Termine zum Nachfassen einsehen",
     ],
     technologies: ["Angular", "TypeScript", "Django REST Framework", "SQLite"],
-    implementation: "Das Angular-Frontend kommuniziert über eine REST-API mit dem Django-Backend. Die API prüft die Eingaben und speichert die Bewerbungen in SQLite. Automatisierte Tests überprüfen unter anderem das Anlegen, Bearbeiten und Löschen sowie den Umgang mit ungültigen Daten.",
+    implementation: "Das Angular-Frontend kommuniziert über eine REST-API mit dem Django-Backend. Die API prüft die Eingaben und speichert die Bewerbungen in SQLite. Automatisierte Tests überprüfen unter anderem das Anlegen, Bearbeiten und Löschen sowie den Umgang mit ungültigen Daten. Eine separate Demo-Konfiguration nutzt eine eigene Datenbank mit fiktiven Bewerbungen. Ein Betreiberbefehl stellt die Beispieldaten wieder her.",
     repository: "https://github.com/Zacariasaibel/BewerbungsTracker",
     note: "Lokales MVP mit fiktiven Daten. Keine öffentliche Demo.",
-    images: [{ src: "/images/projects/bewerbungstracker-dashboard.png", alt: "Dashboard des BewerbungsTrackers mit Übersicht und Bewerbungsverwaltung", width: 1093, height: 946 }],
+    images: [
+      { src: "/images/projects/bewerbungstracker-dashboard.png", alt: "Dashboard des BewerbungsTrackers mit Übersicht und Bewerbungsverwaltung", width: 1093, height: 946 },
+      { src: "/images/projects/bewerbungstracker-filter.png", alt: "Bewerbungsliste mit Unternehmenssuche und drei fiktiven Bewerbungen im Status Vorstellungsgespräch", width: 1440, height: 1000 },
+      { src: "/images/projects/bewerbungstracker-formular.png", alt: "Formular für eine neue Bewerbung mit fiktivem Unternehmen, Position und Notizen", width: 1440, height: 1200 },
+    ],
   },
   {
     slug: "olimpoathlete",
@@ -91,7 +95,7 @@ export const projects: Project[] = [
       "CORS-Unterstützung für die Anbindung eines separaten Frontends",
     ],
     technologies: ["Python", "Django REST Framework", "SQLite", "REST / JSON"],
-    implementation: "Generische Views von Django REST Framework stellen die Endpunkte zum Lesen, Anlegen, Aktualisieren und Löschen bereit. Ein Serializer prüft die Eingabefelder und verarbeitet Produkt- und Bestandsdaten. Die Daten werden in SQLite gespeichert und als JSON zurückgegeben.",
+    implementation: "Generische Views von Django REST Framework stellen die Endpunkte zum Lesen, Anlegen, Aktualisieren und Löschen bereit. Ein Serializer prüft die Eingabefelder und weist negative Preise und Bestände zurück. Produkt und Bestand werden gemeinsam in einer Datenbanktransaktion gespeichert. Die API liefert JSON und eine Oberfläche zum Ausprobieren im Browser. Eine vorbereitete Demo-Konfiguration verwendet eine eigene SQLite-Datenbank mit fiktiven Produkten.",
     repository: "https://github.com/Zacariasaibel/product-inventory-api",
     images: [
       { src: "/images/projects/product-inventory-list.png", alt: "Produktliste mit JSON-Daten in der Django REST API", width: 882, height: 925 },
