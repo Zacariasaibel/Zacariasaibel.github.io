@@ -4,8 +4,12 @@ Mein Portfolio für ein Pflichtpraktikum als Fachinformatiker für Anwendungsent
 
 ## Praktikum
 
-- 25.02.2027 – 27.07.2027
-- 22.09.2027 – 29.10.2027
+Pflichtpraktikum gesucht: Februar – Oktober 2027
+
+1.040 Stunden · Zwei Praxisphasen mit einer Unterbrechung zur Prüfungsvorbereitung
+
+- 1. Praxisphase: 25.02.2027 – 27.07.2027
+- 2. Praxisphase: 22.09.2027 – 29.10.2027
 - Region: Hagen, Ruhrgebiet, Düsseldorf und Köln
 - Finanzierung über den Kostenträger. Eine Vergütung durch das Unternehmen ist nicht erforderlich.
 
@@ -13,7 +17,7 @@ Mein Portfolio für ein Pflichtpraktikum als Fachinformatiker für Anwendungsent
 
 - **[ZABYTE](https://github.com/Zacariasaibel/ZABYTE)**: Fullstack-Shop mit Angular, TypeScript, Django REST Framework und SQLite. Produktsuche und Filter, persistenter Warenkorb und serverseitig validierte Bestellsimulation. [Live-Demo](https://zaibel.pythonanywhere.com/). Keine echten Zahlungen oder Lieferungen.
 
-- **[BewerbungsTracker](https://github.com/Zacariasaibel/BewerbungsTracker)**: Bewerbungen verwalten, suchen und nach Status filtern. Angular, Django REST Framework und SQLite. Mit Übersicht, Terminen zum Nachfassen und getrennten Demo-Daten. Noch keine öffentliche Demo.
+- **[BewerbungsTracker](https://github.com/Zacariasaibel/BewerbungsTracker)**: Bewerbungen verwalten, suchen und nach Status filtern. Angular, Django REST Framework und SQLite. Mit Übersicht und Terminen zum Nachfassen. [Live-Demo](https://bewerbungstracker-p90a.onrender.com/) mit fiktiven Daten, die alle Besucher teilen. Beim Neustart des Dienstes können die Beispieldaten zurückgesetzt werden.
 - **[OlimpoAthlete](https://github.com/Zacariasaibel/OlimpoAthlete)**: Angular-Prototyp für regelbasierte Trainingspläne. [Live-Demo](https://zacariasaibel.github.io/OlimpoAthlete/).
 - **[Product Inventory API](https://github.com/Zacariasaibel/product-inventory-api)**: Produktverwaltung mit Django REST Framework und SQLite. Browserformulare, geprüfte Preise und Bestände sowie getrennte Demo-Daten. Noch keine öffentliche Demo.
 

@@ -6,7 +6,7 @@
 | --- | --- |
 | ZABYTE | https://zaibel.pythonanywhere.com/ und Produkt-API mit HTTP 200 geprüft. Zehn Produkte im Browser geladen. Die bereits bestätigte öffentliche Bestellsimulation bleibt erhalten. |
 | OlimpoAthlete | https://zacariasaibel.github.io/OlimpoAthlete/ nach dem Deployment erneut in Chrome geprüft: Registrierung, Login, drei Coaches, drei Ausstattungen, Tastatur und mobile Pläne funktionieren. |
-| BewerbungsTracker | Vollständige Demo lokal vorbereitet und geprüft. Noch keine öffentliche URL. |
+| BewerbungsTracker | Inzwischen als [öffentliche Demo](https://bewerbungstracker-p90a.onrender.com/) verfügbar. Anlegen, Bearbeiten, Neuladen, Suchen, Filtern und Löschen wurden laut nachträglicher Rückmeldung öffentlich geprüft. |
 | Product Inventory API | Navigierbare DRF-Demo lokal vorbereitet und geprüft. Noch keine öffentliche URL. |
 
 Die vier Repository-Links wurden direkt abgerufen und antworteten mit HTTP 200. Die Checkouts wurden anhand ihrer Remotes und Inhalte identifiziert: BewerbungsTracker bleibt auf `master`, die anderen Projekte auf `main`. OlimpoAthlete verwendet weiterhin die bestehende `gh-pages`-Veröffentlichung. Die übergeordnete Projektmappe wurde nicht zu einem Repository gemacht.
@@ -23,13 +23,13 @@ Die vier Repository-Links wurden direkt abgerufen und antworteten mit HTTP 200. 
 
 ## Fehlendes Hosting
 
-Für BewerbungsTracker und Inventory fehlen zusätzliche verfügbare Hosting-Apps und deren Zugang. Die kostenlose PythonAnywhere-Stufe bietet nur eine Web-App; ZABYTE darf dafür nicht ersetzt werden. Es wurde kein Konto erstellt, kein Tarif geändert und kein kostenpflichtiger Dienst gestartet. Beide Demos haben ihre eigenen Datenbanken und dokumentierten WSGI-Konfigurationen. Es wurden keine persönlichen Datenbanken kopiert.
+Zum Zeitpunkt dieser Prüfung fehlten für BewerbungsTracker und Inventory zusätzliche verfügbare Hosting-Apps und deren Zugang. BewerbungsTracker ist inzwischen auf Render veröffentlicht; die Demo-Daten sind fiktiv, werden von allen Besuchern geteilt und können beim Neustart zurückgesetzt werden. Für Inventory fehlt weiterhin eine öffentliche Demo. Die kostenlose PythonAnywhere-Stufe bietet nur eine Web-App; ZABYTE darf dafür nicht ersetzt werden. Es wurde kein Konto erstellt, kein Tarif geändert und kein kostenpflichtiger Dienst gestartet. Beide Demos haben ihre eigenen Datenbanken und dokumentierten WSGI-Konfigurationen. Es wurden keine persönlichen Datenbanken kopiert.
 
-Nächste Schritte:
+Verbleibende Schritte für Inventory:
 
-1. Zwei unabhängige, bereits autorisierte kostenlose WSGI-Apps mit Zugang bereitstellen. Die bestehende ZABYTE-App bleibt unverändert.
-2. Die jeweilige `docs/demo-deployment.md` befolgen: privater Schlüssel, echter Host, eigene virtuelle Umgebung, leere Demo-Datenbank, Migrationen, Beispieldaten und statische Dateien. Beim Tracker zusätzlich den Angular-Build verwenden.
-3. Beide öffentlichen URLs mit CRUD, Validierungen, direktem Laden und mobiler Ansicht prüfen. Erst danach `demo` in `src/data/projects.ts` eintragen; das bestehende Layout zeigt dann „Live-Demo öffnen“.
+1. Eine unabhängige, bereits autorisierte kostenlose WSGI-App mit Zugang bereitstellen. Die bestehende ZABYTE-App bleibt unverändert.
+2. `docs/demo-deployment.md` im Inventory-Repository befolgen: privater Schlüssel, echter Host, eigene virtuelle Umgebung, leere Demo-Datenbank, Migrationen, Beispieldaten und statische Dateien.
+3. Die öffentliche Inventory-URL mit CRUD, Validierungen, direktem Laden und mobiler Ansicht prüfen. Erst danach deren `demo` in `src/data/projects.ts` eintragen; das bestehende Layout zeigt dann „Live-Demo öffnen“.
 
 Die vorbereiteten Demos erlauben gemeinsames Bearbeiten fiktiver Daten. Sie sind keine privaten Benutzerkonten und keine dauerhafte Ablage.
 

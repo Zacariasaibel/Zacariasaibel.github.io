@@ -27,7 +27,7 @@ export const projects: Project[] = [
       "Eine Bestellung ohne Zahlungs- oder Personendaten simulieren und die bestätigte Zusammenfassung ansehen",
       "Produkte und Kategorien im geschützten Django Admin verwalten und simulierte Bestellungen prüfen",
     ],
-    technologies: ["Angular", "TypeScript", "CSS", "Python", "Django REST Framework", "SQLite"],
+    technologies: ["Angular", "TypeScript", "Python", "Django REST Framework", "SQLite"],
     implementation: "Angular und TypeScript bilden die Oberfläche. Django REST Framework stellt die API bereit, SQLite speichert Produkte und simulierte Bestellungen. Im Browser bleiben nur Produkt-IDs und Mengen gespeichert; Summen werden in ganzen Cent berechnet. Django prüft Preise, Mengen und Bestand anhand der Datenbank und speichert Bestellung und Positionen gemeinsam in einer Transaktion. Eine eindeutige Anfragekennung verhindert doppelte Bestellungen bei Wiederholungen. Die Simulation verändert keine Bestände. Build und vollständiger E2E-Test wurden lokal geprüft. Auf der öffentlichen HTTPS-Seite wurden die zehn Produkte und eine Bestellsimulation mit Referenz, korrektem Betrag und leerem Warenkorb geprüft; die lokale E2E-Suite wurde nicht gegen Produktion ausgeführt.",
     repository: "https://github.com/Zacariasaibel/ZABYTE",
     demo: "https://zaibel.pythonanywhere.com/",
@@ -43,7 +43,7 @@ export const projects: Project[] = [
   {
     slug: "bewerbungstracker",
     name: "BewerbungsTracker",
-    category: "Fullstack · Lokales MVP",
+    category: "Fullstack · Bewerbungsverwaltung",
     summary: "Hilft dabei, Bewerbungen zu verwalten und Termine zum Nachfassen im Blick zu behalten.",
     goal: "Den Stand der eigenen Bewerbungen und die nächsten Schritte an einem Ort überblicken.",
     features: [
@@ -52,10 +52,11 @@ export const projects: Project[] = [
       "Eine Übersicht der Bewerbungen anzeigen",
       "Termine zum Nachfassen einsehen",
     ],
-    technologies: ["Angular", "TypeScript", "Django REST Framework", "SQLite"],
+    technologies: ["Angular", "TypeScript", "Python", "Django REST Framework", "SQLite"],
     implementation: "Das Angular-Frontend kommuniziert über eine REST-API mit dem Django-Backend. Die API prüft die Eingaben und speichert die Bewerbungen in SQLite. Automatisierte Tests überprüfen unter anderem das Anlegen, Bearbeiten und Löschen sowie den Umgang mit ungültigen Daten. Eine separate Demo-Konfiguration nutzt eine eigene Datenbank mit fiktiven Bewerbungen. Ein Betreiberbefehl stellt die Beispieldaten wieder her.",
     repository: "https://github.com/Zacariasaibel/BewerbungsTracker",
-    note: "Lokales MVP mit fiktiven Daten. Keine öffentliche Demo.",
+    demo: "https://bewerbungstracker-p90a.onrender.com/",
+    note: "Die Demo enthält fiktive Bewerbungen. Alle Besucher teilen dieselben Daten. Beim Neustart des Dienstes können die Beispieldaten zurückgesetzt werden.",
     images: [
       { src: "/images/projects/bewerbungstracker-dashboard.png", alt: "Dashboard des BewerbungsTrackers mit Übersicht und Bewerbungsverwaltung", width: 1093, height: 946 },
       { src: "/images/projects/bewerbungstracker-filter.png", alt: "Bewerbungsliste mit Unternehmenssuche und drei fiktiven Bewerbungen im Status Vorstellungsgespräch", width: 1440, height: 1000 },
