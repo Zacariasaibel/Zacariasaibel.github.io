@@ -47,6 +47,8 @@ p { color: var(--muted); }
 .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.5rem; }
 .button { display: inline-flex; justify-content: center; align-items: center; gap: 1.5rem; padding: .85rem 1.3rem; min-height: 48px; border-radius: .45rem; background: var(--blue); color: white; font-weight: 650; }
 .button:hover { background: #1746a5; }
+.button-secondary { max-width: 100%; border: 1px solid currentColor; background: transparent; color: var(--blue); text-align: center; }
+.button-secondary:hover { background: #e8effa; }
 .text-link { display: inline-flex; align-items: center; gap: .5rem; min-height: 44px; color: var(--blue); font-size: .92rem; font-weight: 700; }
 .contact .eyebrow { color: #aacbff; }
 .internship-info { padding: 1.5rem 2rem; margin-bottom: 3rem; border: 1px solid var(--border); border-radius: .85rem; background: var(--light); }
@@ -84,6 +86,8 @@ p { color: var(--muted); }
 .contact-card p { color: #d6e2f1; }
 .contact-card h2 { max-width: 24rem; }
 .contact-card > div > p:last-child { margin-bottom: 0; }
+.contact-resume { max-width: 100%; text-align: center; }
+.contact-resume:focus-visible { outline-color: #aacbff; }
 .contact-links { display: grid; gap: .75rem; font-style: normal; min-width: 0; }
 .contact-links a { display: grid; gap: .15rem; padding: .9rem 1rem; border: 1px solid #ffffff40; border-radius: .55rem; background: #ffffff0d; overflow-wrap: anywhere; }
 .contact-links a.contact-email { border-color: #aacbff; background: #aacbff1f; }

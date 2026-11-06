@@ -1,3 +1,7 @@
+---
+const resumeUrl = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/documents/Lebenslauf_Zacarias_Aibbich_Belhadj.pdf`;
+---
+
 <section id="contact" class="section contact" aria-labelledby="contact-title">
   <section class="container internship-info" aria-labelledby="internship-title">
     <h2 id="internship-title">Pflichtpraktikum gesucht: Februar – Oktober 2027</h2>
@@ -10,7 +14,7 @@
     <p class="internship-note">Die Finanzierung erfolgt über den Kostenträger. Eine Vergütung durch den Praktikumsbetrieb ist nicht erforderlich.</p>
   </section>
   <div class="container contact-card">
-    <div><p class="eyebrow">Kontakt</p><h2 id="contact-title">Ich freue mich auf Ihre Nachricht.</h2><p>Sie suchen einen Praktikanten für Ihr Entwicklungsteam? Schreiben Sie mir gerne. Ich freue mich darauf, Sie und Ihr Unternehmen kennenzulernen.</p></div>
+    <div><p class="eyebrow">Kontakt</p><h2 id="contact-title">Ich freue mich auf Ihre Nachricht.</h2><p>Sie suchen einen Praktikanten für Ihr Entwicklungsteam? Schreiben Sie mir gerne. Ich freue mich darauf, Sie und Ihr Unternehmen kennenzulernen.</p><a class="button contact-resume" href={resumeUrl} download>Lebenslauf herunterladen (PDF)</a></div>
     <address class="contact-links">
       <a class="contact-email" href="mailto:zacaab8@gmail.com"><span>E-Mail</span><strong>zacaab8@gmail.com</strong></a>
       <a href="https://github.com/Zacariasaibel"><span>GitHub</span><strong>Zacariasaibel <span aria-hidden="true">↗</span></strong></a>
